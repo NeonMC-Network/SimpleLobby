@@ -1,0 +1,26 @@
+main: me.naptie.bukkit.simplelobby.Main
+name: SimpleLobby
+version: 2.0.0
+api-version: "1.15"
+description: A lobby plugin made for integrated servers on NeonMC.
+author: Naptie
+commands:
+  setlobby:
+    aliases: [lobbyset, setspawn, spawnset]
+    description: To set the spawn point for the lobby.
+    usage: /<command> [world] [x] [y] [z] [pitch] [yaw]
+  lobby:
+    aliases: [gotolobby, backtolobby, spawn, gotospawn, backtospawn]
+    description: To teleport players to the spawn point of the lobby.
+    usage: /<command>
+  fly:
+    aliases: [flight, flymode, flightmode]
+    description: To toggle flight mode.
+    usage: /<command> [on|off]
+permissions:
+  neonmc.lobby.set:
+    description: Allows players to set the sapwn point for a lobby.
+    default: op
+  neonmc.player.flight:
+    description: Allows players to toggle flight mode.
+    default: op

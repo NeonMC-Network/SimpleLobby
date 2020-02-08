@@ -1,0 +1,26 @@
+languages:
+  - en-GB
+  - en-US
+  - zh-CN
+update-language-files: true
+
+lobby:
+  world: Lobby
+  x: 0.5
+  y: 41.0
+  z: 0.5
+  pitch: 0.0
+  yaw: -90.0
+
+integration: Practice
+provide-spawn-items: false
+
+mysql:
+  enable: true
+  debug: false
+  username: username
+  password: password
+  address: localhost:3306
+  database: neonmc
+  timezone: CST
+  useSSL: false
